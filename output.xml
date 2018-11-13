@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181112 22:58:23.935" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\personal\amit_class\amit\sample.robot" id="s1" name="Sample">
+<test id="s1-t1" name="connect_sample">
+<kw type="for" name="${server} IN [ @{servers} ]">
+<kw type="foritem" name="${server} = {'user': '', 'password': '', 'name': 'switch-a', 'aliases': {'testhost_aix_01_a1': 'a0:50:76:05:06:ac:00:04', 'testhost_aix_01_a3': 'a0:50:76:05:06:ac:00:04', 'testhost_aix_01_a2': 'a0:50:76:05:06:ac:...">
+<kw name="Connect" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<status status="PASS" endtime="20181112 22:58:24.769" starttime="20181112 22:58:24.768"></status>
+</kw>
+<kw name="Create Alias" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<msg timestamp="20181112 22:58:24.770" level="INFO">('testhost_aix_01_a1', 'a0:50:76:05:06:ac:00:04')
+('testhost_aix_01_a3', 'a0:50:76:05:06:ac:00:04')
+('testhost_aix_01_a2', 'a0:50:76:05:06:ac:00:05')
+alicreate "testhost_aix_01_a1","a0:50:76:05:06:ac:00:04";alicreate "testhost_aix_01_a3","a0:50:76:05:06:ac:00:04";alicreate "testhost_aix_01_a2","a0:50:76:05:06:ac:00:05"</msg>
+<status status="PASS" endtime="20181112 22:58:24.770" starttime="20181112 22:58:24.769"></status>
+</kw>
+<kw name="Verify Alias" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<msg timestamp="20181112 22:58:24.771" level="INFO">alishow testhost_aix_01_a1;alishow testhost_aix_01_a3;alishow testhost_aix_01_a2</msg>
+<status status="PASS" endtime="20181112 22:58:24.771" starttime="20181112 22:58:24.770"></status>
+</kw>
+<status status="PASS" endtime="20181112 22:58:24.771" starttime="20181112 22:58:24.768"></status>
+</kw>
+<kw type="foritem" name="${server} = {'user': '', 'password': '', 'name': 'switch-b', 'aliases': {'testhost_aix_01_b1': 'a0:50:76:05:06:ac:00:04', 'testhost_aix_01_b2': 'a0:50:76:05:06:ac:00:05', 'testhost_aix_01_b3': 'a0:50:76:05:06:ac:...">
+<kw name="Connect" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<status status="PASS" endtime="20181112 22:58:24.772" starttime="20181112 22:58:24.771"></status>
+</kw>
+<kw name="Create Alias" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<msg timestamp="20181112 22:58:24.772" level="INFO">('testhost_aix_01_b1', 'a0:50:76:05:06:ac:00:04')
+('testhost_aix_01_b2', 'a0:50:76:05:06:ac:00:05')
+('testhost_aix_01_b3', 'a0:50:76:05:06:ac:00:04')
+alicreate "testhost_aix_01_b1","a0:50:76:05:06:ac:00:04";alicreate "testhost_aix_01_b2","a0:50:76:05:06:ac:00:05";alicreate "testhost_aix_01_b3","a0:50:76:05:06:ac:00:04"</msg>
+<status status="PASS" endtime="20181112 22:58:24.773" starttime="20181112 22:58:24.772"></status>
+</kw>
+<kw name="Verify Alias" library="sa">
+<arguments>
+<arg>${server}</arg>
+</arguments>
+<msg timestamp="20181112 22:58:24.773" level="INFO">alishow testhost_aix_01_b1;alishow testhost_aix_01_b2;alishow testhost_aix_01_b3</msg>
+<status status="PASS" endtime="20181112 22:58:24.773" starttime="20181112 22:58:24.773"></status>
+</kw>
+<status status="PASS" endtime="20181112 22:58:24.773" starttime="20181112 22:58:24.771"></status>
+</kw>
+<status status="PASS" endtime="20181112 22:58:24.773" starttime="20181112 22:58:24.767"></status>
+</kw>
+<status status="PASS" endtime="20181112 22:58:24.774" critical="yes" starttime="20181112 22:58:24.766"></status>
+</test>
+<status status="PASS" endtime="20181112 22:58:24.776" starttime="20181112 22:58:23.940"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Sample" pass="1">Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

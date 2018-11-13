@@ -1,0 +1,16 @@
+servers:
+    - name: "switch-a"
+      user: ""
+      password: ""
+      aliases:
+        testhost_aix_01_a1: a0:50:76:05:06:ac:00:04
+        testhost_aix_01_a2: a0:50:76:05:06:ac:00:05
+        testhost_aix_01_a3: a0:50:76:05:06:ac:00:04
+    - name: "switch-b"
+      user: ""
+      password: ""
+      aliases:
+        testhost_aix_01_b1: a0:50:76:05:06:ac:00:04
+        testhost_aix_01_b2: a0:50:76:05:06:ac:00:05
+        testhost_aix_01_b3: a0:50:76:05:06:ac:00:04
+    
